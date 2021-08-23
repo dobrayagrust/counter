@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Counter} from './Counter/Counter';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Counter from "./components/Counter";
+import {SetCounter} from "./SetCounter/SetCounter";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Counter />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <Counter/>
+        <SetCounter/>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

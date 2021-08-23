@@ -4,7 +4,7 @@ import classes from "./Button.module.css";
 export type buttonType = {
     title: string;
     onClick: () => void;
-    disabled: boolean;
+    disabled?: boolean;
 }
 
 export const Button = (props: buttonType) => {

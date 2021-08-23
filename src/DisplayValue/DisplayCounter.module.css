@@ -1,0 +1,26 @@
+.displayValue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 50px;
+    border: #282c34;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: large;
+}
+
+.displayEnd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 50px;
+    border: #282c34;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: large;
+    color: red;
+}

@@ -1,0 +1,31 @@
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: cadetblue;
+    align-items: center;
+    height: 50%;
+    width: 350px;
+    border: #282c34;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.setValue {
+    flex-direction: column;
+    border: #282c34;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.button {
+    border: #282c34;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
