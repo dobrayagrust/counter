@@ -1,0 +1,35 @@
+.display {
+/*    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+    align-items: center;
+    height: 50%;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;*/
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    height: 50%;
+    width: 300px;
+    border-style: groove;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.outputDisplay {
+    text-align: center;
+
+}
+.button {
+    display: flex;
+    border-style: groove;
+    margin: 5px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+
+
+

@@ -1,0 +1,49 @@
+.displayContent {
+    display: flex;
+    height: 50%;
+    width: 300px;
+    flex-direction: column;
+    border-style: groove;
+    border-radius: 10px;
+    background-color: cadetblue;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+.displayCounter {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: cadetblue;
+}
+
+/*.stopCounter {
+    font-size: large;
+    color: red;
+}
+.counter {
+    font-size: medium;
+}*/
+
+.input {
+    height: 30px;
+    width: 50px;
+    border: #282c34;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.displayButton {
+    display: flex;
+    border-style: groove;
+    margin: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: cadetblue;
+}
+
+

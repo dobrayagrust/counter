@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Counter from "./components/Counter";
+import Counter from "./components/Counter/Counter";
+import { SetDisplayCounter } from './components/SetCounter/SetDisplayCounter';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Counter />
+      <Counter/>
+      <SetDisplayCounter/>
   </React.StrictMode>,
   document.getElementById('root')
 );
