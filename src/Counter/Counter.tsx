@@ -1,29 +1,33 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Button} from '../components/Button/Button';
 import {DisplayValue} from "../DisplayValue/DisplayCounter";
 import classes from "./Counter.module.css"
 
+type CounterType = {
+    count: number
+    setCount: (count: number) => void
+    maxValue: number
+    setMaxValue: (maxValue: number) => void
 
-export const Counter = () => {
+}
 
-    const [count, setCount] = useState(0)
+export const Counter: React.FC<CounterType> = ({count, setCount, ...props}) => {
 
     const increaseCount = () => {
         setCount(count + 1)
+        console.log(props.maxValue)
     }
 
     const resetCount = () => {
         setCount(0)
     }
 
-
-
     return (
         <div className={classes.content}>
-                <DisplayValue value={count} />
+            <DisplayValue maxValue={props.maxValue} value={count}/>
             <div className={classes.button}>
                 <Button onClick={increaseCount}
-                        disabled={count === 7}
+                        disabled={count === props.maxValue }
                         title={"Inc"}
                 />
                 <Button onClick={resetCount}

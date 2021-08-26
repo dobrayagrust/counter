@@ -1,19 +1,19 @@
-import React from 'react';
+import React, {ChangeEvent} from 'react';
 import classes from "./Input.module.css";
 
 export type InputType = {
-
+    onChange: (e: ChangeEvent<HTMLInputElement>) => void,
+    value: number
 }
+
 
 export const Input = (props: InputType) => {
 
-    const changeHandler = () => {
-
-    }
     return (
         <input className={classes.input}
+               onChange={props.onChange}
                type={'number'}
-               onChange={changeHandler}
+               value={props.value}
         >
         </input>
     )

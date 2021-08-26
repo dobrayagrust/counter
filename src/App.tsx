@@ -1,22 +1,25 @@
 import React, {useState} from 'react';
 import './App.css';
-import {Button} from "./components/Button/Button";
+import {Counter} from "./Counter/Counter";
+import {SetCounter} from "./SetCounter/SetCounter";
 
 function App() {
-
-    const [startCounterValue, setStartCounterValue] = useState(0)
-
-
-    const increaseCounterValue = () => {
-        setStartCounterValue(startCounterValue + 1)
-    }
+    let [count, setCount] = useState(0)
+    let [maxValue, setMaxValue] = useState(0)
 
     return (
-        <div className={'counter-wrapper'}>
-            <input type={'number'} value={startCounterValue}/>
-            <Button title={"Set"} onClick={increaseCounterValue} disabled={startCounterValue === -Infinity}/>
-        </div>
-    );
+        <>
+            <Counter count={count}
+                     setCount={setCount}
+                     maxValue={maxValue}
+                     setMaxValue={setMaxValue}
+            />
+            <SetCounter setCount={setCount}
+                        maxValue={maxValue}
+                        setMaxValue={setMaxValue}
+            />
+        </>
+    )
 }
 
 export default App;
